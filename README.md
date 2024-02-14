@@ -1,1 +1,2 @@
-# Execute usando node servidor.js
+# Para executar use:
+node servidor.js
