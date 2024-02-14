@@ -16,4 +16,7 @@ io.addListener('connection', (socket) => {
 
 aplicacao.use(express.static('public'));
 
-servidorHttp.listen(1000, '192.168.2.88');
+const port = 1000
+servidorHttp.listen(port, () => {
+    console.log(`Seu servidor está pronto, acesse: http://localhost:${port}/`);
+});
